@@ -10,8 +10,8 @@
 	<div class="navBar">
 		<div class="navBar-contents">
 			<img src="img/logo.jpg" alt="Chatty">
-			<input type="text" name="msgBox" placeholder="Type your message here">
-			<button type="button">Clear Message Board</button>
+			<input type="text" name="msgBox" placeholder="Type your message here" id="user-input">
+			<button type="button" id="clear-messages">Clear Message Board</button>
 			<div class="navBar-userSelect">
 				<input type="radio" name="userSelect" id="userSelect-Boba"><label for="userSelect-Boba">Boba Fett</label>
 				<input type="radio" name="userSelect" id="userSelect-Bossk"><label for="userSelect-Bossk">Bossk</label>
@@ -25,8 +25,16 @@
 			</div>
 		</div>
 	</div>
+	
+	<div class="message-container">
+		<div id="inner-container">
+			Text Test
+		</div>
+	</div>
 
-
-  <script src=""></script>
+  <script src="js/iifeBuildDom.js"></script>
+  <script src="js/eventListener.js"></script>
+  <script src="js/iifexhr.js"></script>
+  <script src="js/javascript.js"></script>
 </body>
 </html>
